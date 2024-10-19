@@ -1,0 +1,31 @@
+###  todos los productos
+GET http://localhost:8080/products
+
+###  producto
+GET http://localhost:8080/products/id
+
+###  nuevo producto
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Nuevo ",
+  "category": "Categoría",
+  "price": 100.0,
+  "stock": 10
+}
+
+### Actualizar
+PUT http://localhost:8080/products/id
+Content-Type: application/json
+
+{
+  "name": "Actualizado",
+  "category": "Nueva ",
+  "price": 150.0,
+  "stock": 20
+}
+
+### Eliminar
+DELETE http://localhost:8080/products/id
+
